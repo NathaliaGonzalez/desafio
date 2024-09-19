@@ -36,3 +36,139 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;  /* Añadir una línea/borde a la tarjeta */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra ligera para dar profundidad */
+  text-align: center;  /* Centrar el texto */
+}
+
+.product-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-card button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #218838;
+}
+
+.product-card span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain; /* Asegura que las imágenes se ajusten sin deformarse */
+}
+/* Carrito flotante */
+.floating-cart {
+  position: fixed;
+  bottom: 20px;   
+  right: 20px;    
+  background-color: #28a745;  
+  color: white; 
+  border-radius: 50px;  
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  z-index: 1000;  
+  transition: background-color 0.3s ease;
+}
+
+.floating-cart:hover {
+  background-color: #218838;  /* Color más oscuro al hacer hover */
+}
+
+.cart-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-item button:hover {
+  background-color: #218838;
+}
+
+.cart-item-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-summary {
+  text-align: center;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
